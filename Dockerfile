@@ -20,6 +20,7 @@ EXPOSE $DEFAULT_PORT
 
 ENV CHOKIDAR_USEPOLLING=true
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--poll", "2000"]
+
 
 

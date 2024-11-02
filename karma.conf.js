@@ -9,12 +9,6 @@ module.exports = function (config) {
       require("@angular-devkit/build-angular/plugins/karma"),
     ],
     browsers: ["ChromeHeadless"],
-    customLaunchers: {
-      ChromeHeadlessCI: {
-        base: "ChromeHeadless",
-        flags: ["--no-sandbox", "--disable-gpu"],
-      },
-    },
     reporters: ["progress", "kjhtml"],
     singleRun: true,
     restartOnFileChange: true,

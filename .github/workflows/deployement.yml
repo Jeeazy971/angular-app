@@ -9,7 +9,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 20.18
+          node-version: "20.18"
   tests:
     runs-on: ubuntu-latest
     needs: angular-build
